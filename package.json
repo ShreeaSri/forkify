@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ShreeaSri/recipify#readme",
   "dependencies": {
     "core-js": "^3.33.0",
+    "fractional": "^1.0.0",
     "parcel": "^2.10.0",
     "regenerator-runtime": "^0.14.0",
     "sass": "^1.26.10"
