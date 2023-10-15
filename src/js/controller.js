@@ -33,7 +33,7 @@ fetch(
   'https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886'
 );
 
-//adding hashchange and load event
-['hashchange', 'load'].forEach(ev =>
-  window.addEventListener(ev, controlRecipes)
-);
+const init = function () {
+  recipeView.addHandlerRender(controlRecipes);
+};
+init();
