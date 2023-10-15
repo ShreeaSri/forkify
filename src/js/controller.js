@@ -25,13 +25,9 @@ const controlRecipes = async function () {
     //2)rendering the recipe
     recipeView.render(model.state.recipe);
   } catch (err) {
-    alert(err);
+    recipeView.renderError();
   }
 };
-
-fetch(
-  'https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886'
-);
 
 const init = function () {
   recipeView.addHandlerRender(controlRecipes);
