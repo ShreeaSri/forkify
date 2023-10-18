@@ -8,9 +8,9 @@ import resultsView from './views/resultsView.js';
 // https://forkify-api.herokuapp.com/v2
 
 ///////////////////////////////////////
-if (module.hot) {
-  module.hot.accept();
-}
+// if (module.hot) {
+//   module.hot.accept();
+// }
 
 const controlRecipes = async function () {
   try {
@@ -44,7 +44,8 @@ const controlSearchResults = async function () {
     await model.loadeSearchResults(query);
 
     //3) render results
-    resultsView.render(model.state.search.results);
+    // resultsView.render(model.state.search.results);
+    resultsView.render(model.getSearchResultsPage(1));
   } catch (err) {
     console.log(err);
   }
